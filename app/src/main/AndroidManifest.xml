@@ -11,7 +11,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFirstApp">
         <activity
-            android:name=".mysecondActivity"
+            android:name=".MySecondActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
