@@ -1,5 +1,6 @@
 package com.example.myfirstapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
@@ -17,7 +18,8 @@ class MainActivity : AppCompatActivity() {
         val boton: Button= findViewById(R.id.boton)
 
         boton.setOnClickListener {
-            Toast.makeText(this, "Esto es un toast", Toast.LENGTH_SHORT).show()
+            val intent = Intent (this, mysecondActivity::class.java)
+            startActivity(intent)
         }
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
